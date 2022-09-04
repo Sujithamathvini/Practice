@@ -1,2 +1,26 @@
-hashing lala
-![countfreq-twoLoops](https://user-images.githubusercontent.com/70484186/188319907-c55e39e8-4b57-41c3-99eb-66af652208d6.jpeg)
+# Count Frequency of each element in an array
+
+# Approach 1
+![countfreq-twoLoops](https://user-images.githubusercontent.com/70484186/188320600-58fa9e97-9dde-414e-aed4-24d9a1c73ca6.jpg)
+
+
+```
+//using two for loop
+
+void countfreq(int arr[],int n){
+vector<bool> visited(n,false);
+for(int i=0;i<n;i++){
+  if(visited[i]==true)
+    continue;
+    
+  int c=1;
+  for(int j=i+1;j<n;j++){
+    if(arr[i]==arr[j]){
+      visited[j]=true;
+      c++;
+    }
+  }
+  cout<<arr[i]<<" "<<c;
+}
+}
+```
