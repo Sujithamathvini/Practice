@@ -1,6 +1,5 @@
 //using two for loop
 
-![countfreq-twoLoops](https://user-images.githubusercontent.com/70484186/188310695-aa95ef14-090e-483c-9e99-2549624bd844.jpeg)
 
 
 void countfreq(int arr[],int n){
