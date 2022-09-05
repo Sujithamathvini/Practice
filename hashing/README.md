@@ -10,17 +10,17 @@
 void countfreq(int arr[],int n){
 vector<bool> visited(n,false);
 for(int i=0;i<n;i++){
-  if(visited[i]==true)
-    continue;
+    if(visited[i]==true)
+        continue;
     
-  int c=1;
-  for(int j=i+1;j<n;j++){
-    if(arr[i]==arr[j]){
-      visited[j]=true;
-      c++;
+    int c=1;
+    for(int j=i+1;j<n;j++){
+        if(arr[i]==arr[j]){
+            visited[j]=true;
+            c++;
+        }
     }
-  }
-  cout<<arr[i]<<" "<<c;
+    cout<<arr[i]<<" "<<c;
 }
 }
 ```
