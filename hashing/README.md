@@ -29,6 +29,8 @@ for(int i=0;i<n;i++){
 
 # Approach 2
 
+
+```
 unordered_map<int,int> m;
 int n;
 cin>>n;
@@ -39,3 +41,4 @@ m[a]++;
 }
 for(auto it:m)
 cout<<it.first<<" "<<it.second<<endl;
+```
